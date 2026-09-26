@@ -1,53 +1,58 @@
-# Hi, I'm Dinesh Balwan
+# Hi, I'm Dinesh
 
-Computer Science undergraduate at Bangalore Institute of Technology (B.E., class of 2028)
-and freelance full-stack developer based in Bengaluru. I build web applications
-end to end, from the data model and API to the interface and deployment, and I
-have shipped production work for paying clients.
+CS undergrad at Bangalore Institute of Technology (class of 2028) by day, freelance
+full-stack developer by night, and occasionally by 3am. I build web apps end to end,
+from the schema to the deploy button, and some of them have paying clients.
 
-### What I build
+### What I actually do
 
-- **Full-stack web apps**: React and Next.js frontends on Node.js APIs backed by MongoDB or SQL
-- **Marketplaces and booking systems**: listings, bookings, reviews and admin dashboards
-- **The production side**: image pipelines, transactional email, scheduled jobs, auth, and hardening against CSRF, abuse and bots
-- **Interfaces with motion**: scroll choreography and WebGL effects that stay fast and accessible
-
-### Tech stack
-
-- **Frontend**: React, Next.js, TypeScript, JavaScript, Vite, Tailwind CSS, GSAP, WebGL
-- **Backend**: Node.js, Express, Next.js server actions, REST APIs, Server-Sent Events, JWT and session auth
-- **Data**: MongoDB (Mongoose), SQLite, Prisma
-- **Services**: Cloudinary, Brevo SMTP, node-cron
-- **Deployment**: Render, Vercel, Git
+- **Full-stack apps that survive real users**: React and Next.js on top of Node, with MongoDB or SQL underneath.
+- **Marketplaces and booking systems**, which is mostly the art of stopping two people from booking the same 4pm slot.
+- **The unglamorous production bits**: image pipelines, emails that actually arrive, cron jobs, auth, and making bots feel unwelcome.
+- **Motion and WebGL**, with `prefers-reduced-motion` respected, because not everyone wants the page to do a backflip.
 
 ### Featured work
 
-**[Wed Me Royal](https://www.wedmeroyal.com)**: live client project, an Indian wedding vendor marketplace.
-Vendors list services with Cloudinary-hosted galleries; couples browse, book and review. Pending bookings
-expire automatically through a node-cron job that sends Brevo email notices, and the site includes
-an admin dashboard, CSRF protection, rate limiting and reCAPTCHA.
-*React · Express · MongoDB · Cloudinary · Brevo · Render.* Client code, so the repository is private.
+**[Wed Me Royal](https://www.wedmeroyal.com)**: big fat Indian weddings, fewer phone calls. A live client
+marketplace where vendors list services with Cloudinary galleries and couples browse, book and review. Bookings
+nobody confirms expire on their own through a node-cron job that emails everyone about it, so no vendor is
+left holding a date for a couple who ghosted. Also: an admin dashboard, CSRF protection, rate limiting and reCAPTCHA.
+*React · Express · MongoDB · Cloudinary · Brevo · Render.* Client code, so the repo is private.
 
-**[Halvard](https://github.com/Dinesh282828/halvard)**: a motion-led website for a fictional architecture
-studio, with GSAP-pinned scroll sequences, Lenis smooth scrolling and hand-written WebGL image distortion
-in about 139 kB of gzipped JavaScript. It honours `prefers-reduced-motion` throughout.
+**[Halvard](https://github.com/Dinesh282828/halvard)**: an architecture studio that doesn't exist, with a website
+that very much does. GSAP-pinned scroll sequences, Lenis smooth scrolling and hand-written WebGL image distortion,
+all in about 139 kB of gzipped JavaScript. No three.js, because a few hundred kilobytes is a lot to spend on
+drawing one rectangle.
 *React · TypeScript · Vite · GSAP · WebGL.*
 
-**Orrery** *(in progress)*: a timetabling engine for NEP/CBCS colleges, where every student picks their own
-courses. It schedules from individual enrolments rather than fixed class batches (the demo college's
-480 students have 430 distinct course baskets), using a zero-dependency solver built on simulated annealing.
-When no timetable is possible, it explains which constraints collide and tests the smallest fix before
-suggesting it. *Next.js · React · JavaScript · SQLite.*
+**Orrery** *(in progress)*: 480 students, 430 different course baskets, one timetable. Under NEP every student
+picks their own courses, so the old "class batch" is gone and so is every tool built on it. Orrery schedules
+individual enrolments with a zero-dependency simulated-annealing solver, and when no timetable is possible it
+doesn't just shrug: it tells you which lecturer is four periods short, and tests the fix before suggesting it.
+*Next.js · React · JavaScript · SQLite.*
 
-**Booked** *(in progress)*: a booking SaaS for studios and independent professionals, with branded public
-booking pages, an owner dashboard and a scheduling engine that re-checks availability at booking time
-to prevent double bookings. *Next.js · TypeScript · Prisma · Tailwind CSS.*
+**Booked** *(in progress)*: booking software with one sacred rule: never let two people book the same slot. It
+re-checks availability at the very last moment, because race conditions don't make appointments. Branded
+booking pages and an owner dashboard come with it.
+*Next.js · TypeScript · Prisma · Tailwind CSS.*
 
-Orrery and Booked are in private repositories; code is available on request.
+Orrery and Booked live in private repos; code is available on request.
 
-### Contact
+### The stack, as a config file
 
-Open to freelance projects, internships and full-time roles.
+```ts
+const dinesh = {
+  basedIn: "Bengaluru",
+  frontend: ["React", "Next.js", "TypeScript", "Vite", "Tailwind CSS", "GSAP", "WebGL"],
+  backend: ["Node.js", "Express", "Next.js server actions", "REST", "Server-Sent Events"],
+  data: ["MongoDB (Mongoose)", "SQLite", "Prisma"],
+  services: ["Cloudinary", "Brevo SMTP", "node-cron"],
+  shipsTo: ["Render", "Vercel"],
+  currentlyGrinding: "LeetCode, one LRU cache at a time",
+};
+```
 
-- Email: [dineshbalwan103@gmail.com](mailto:dineshbalwan103@gmail.com)
-- Location: Bengaluru, India
+### Say hi
+
+Open to freelance projects, internships and full-time roles. If you need something built, or a timetable
+everyone swears is impossible, [email me](mailto:dineshbalwan103@gmail.com).
