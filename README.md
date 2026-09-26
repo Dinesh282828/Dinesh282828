@@ -1,26 +1,24 @@
-## Dinesh Balwan
+# Hi, I'm Dinesh Balwan
 
-Computer Science undergraduate at Bangalore Institute of Technology (5th semester)
+Computer Science undergraduate at Bangalore Institute of Technology (B.E., class of 2028)
 and freelance full-stack developer based in Bengaluru. I build web applications
 end to end, from the data model and API to the interface and deployment, and I
 have shipped production work for paying clients.
 
 ### What I build
 
-- **Full-stack web apps**: React frontends on Node.js/Express APIs backed by MongoDB
+- **Full-stack web apps**: React and Next.js frontends on Node.js APIs backed by MongoDB or SQL
 - **Marketplaces and booking systems**: listings, bookings, reviews and admin dashboards
 - **The production side**: image pipelines, transactional email, scheduled jobs, auth, and hardening against CSRF, abuse and bots
 - **Interfaces with motion**: scroll choreography and WebGL effects that stay fast and accessible
 
 ### Tech stack
 
-| | |
-|---|---|
-| **Frontend** | React, Next.js, TypeScript, JavaScript, Vite, Tailwind CSS, GSAP |
-| **Backend** | Node.js, Express, REST APIs, JWT and session auth |
-| **Data** | MongoDB (Mongoose), SQLite, Prisma |
-| **Services** | Cloudinary, Brevo SMTP, node-cron |
-| **Deployment** | Render, Vercel, Git |
+- **Frontend**: React, Next.js, TypeScript, JavaScript, Vite, Tailwind CSS, GSAP, WebGL
+- **Backend**: Node.js, Express, Next.js server actions, REST APIs, Server-Sent Events, JWT and session auth
+- **Data**: MongoDB (Mongoose), SQLite, Prisma
+- **Services**: Cloudinary, Brevo SMTP, node-cron
+- **Deployment**: Render, Vercel, Git
 
 ### Featured work
 
@@ -35,9 +33,17 @@ studio, with GSAP-pinned scroll sequences, Lenis smooth scrolling and hand-writt
 in about 139 kB of gzipped JavaScript. It honours `prefers-reduced-motion` throughout.
 *React · TypeScript · Vite · GSAP · WebGL.*
 
-**Also in progress:** *Booked*, a booking SaaS with a double-booking-safe scheduling engine
-(Next.js, Prisma), and *Orrery*, a timetabling engine for NEP/CBCS colleges that schedules individual
-enrolments and explains why a timetable is infeasible. Code available on request.
+**Orrery** *(in progress)*: a timetabling engine for NEP/CBCS colleges, where every student picks their own
+courses. It schedules from individual enrolments rather than fixed class batches (the demo college's
+480 students have 430 distinct course baskets), using a zero-dependency solver built on simulated annealing.
+When no timetable is possible, it explains which constraints collide and tests the smallest fix before
+suggesting it. *Next.js · React · JavaScript · SQLite.*
+
+**Booked** *(in progress)*: a booking SaaS for studios and independent professionals, with branded public
+booking pages, an owner dashboard and a scheduling engine that re-checks availability at booking time
+to prevent double bookings. *Next.js · TypeScript · Prisma · Tailwind CSS.*
+
+Orrery and Booked are in private repositories; code is available on request.
 
 ### Contact
 
