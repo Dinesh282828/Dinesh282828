@@ -48,9 +48,14 @@ const dinesh = {
   data: ["MongoDB (Mongoose)", "SQLite", "Prisma"],
   services: ["Cloudinary", "Brevo SMTP", "node-cron"],
   shipsTo: ["Render", "Vercel"],
-  currentlyGrinding: "LeetCode, one LRU cache at a time",
 };
 ```
+
+### Currently
+
+- **Operating systems**, working through *OSTEP* (Operating Systems: Three Easy Pieces), so I know what my code is really asking the kernel for every time it calls `fork()`.
+- **Networking, in depth**: from the socket call down to the packets on the wire, because "it works on localhost" is not a network strategy.
+- **DSA for placements**, one LRU cache at a time.
 
 ### Say hi
 
